@@ -188,8 +188,6 @@ paths:
     $ref: ./paths/jssdk/get-conversations.yaml
   /msg/batch_send_msg:
     $ref: ./paths/msg/batch-send-msg.yaml
-  /msg/check_msg_is_send_success:
-    $ref: ./paths/msg/check-msg-is-send-success.yaml
   /msg/clear_conversation_msg:
     $ref: ./paths/msg/clear-conversation-msg.yaml
   /msg/delete_msg_phsical_by_seq:

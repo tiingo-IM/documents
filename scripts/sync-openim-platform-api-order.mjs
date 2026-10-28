@@ -449,7 +449,6 @@ const routeRelocations = [
   ['message/delete-msg-physical-by-seq', 'message/deleting-messages/delete-msg-physical-by-seq'],
   ['message/delete-msg-physical', 'message/deleting-messages/delete-msg-physical'],
   ['message/batch-send-msg', 'message/sending-messages/batch-send-msg'],
-  ['message/check-msg-is-send-success', 'message/sending-messages/check-msg-is-send-success'],
   ['message/get-server-time', 'message/retrieving-messages/get-server-time'],
 
   ['third/prometheus', 'third/monitoring/prometheus'],

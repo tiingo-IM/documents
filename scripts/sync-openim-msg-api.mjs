@@ -27,7 +27,6 @@ const goMsgApiOrder = [
   '/msg/delete_msg_phsical_by_seq',
   '/msg/delete_msg_physical',
   '/msg/batch_send_msg',
-  '/msg/check_msg_is_send_success',
   '/msg/get_server_time',
 ];
 const goMsgApiOrderIndex = new Map(goMsgApiOrder.map((endpoint, index) => [endpoint, index]));
@@ -583,18 +582,6 @@ const messageApis = [
       '`content`、`contentType` 和 `sessionType` 必填。',
       '`isSendAll=true` 会遍历全量用户，调用前应评估推送和写入压力。',
     ],
-  },
-  {
-    slug: 'check-msg-is-send-success',
-    title: '检查消息发送状态',
-    endpoint: '/msg/check_msg_is_send_success',
-    summary: '获取 API 发送消息状态标记。',
-    sample: {},
-    fields: [['(空对象)', '是', 'object', '请求体传空 JSON 对象 `{}`。']],
-    responseData: { status: 2 },
-    responseFields: [['data.status', 'int', '消息发送状态。']],
-    sideEffects: '只读查询，不改变消息状态。',
-    limits: ['请求体为空对象。'],
   },
   {
     slug: 'get-server-time',
